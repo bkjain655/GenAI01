@@ -1,0 +1,13 @@
+.results-list {
+    padding: 5px;
+    &-question {
+        padding: 10px 5px;
+        background-color: darkgrey;
+        border-radius: 3px;
+    }
+    &-answer {
+        padding: 10px 5px;
+        border-radius: 3px;
+        white-space: pre-wrap;
+    }
+}

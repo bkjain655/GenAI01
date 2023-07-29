@@ -1,0 +1,24 @@
+<ng-container *ngIf="results.length > 0; else zeroResults">
+    <div class="results-list" *ngFor="let res of results">
+        <div nz-row>
+            <div class="results-list-question" nz-col nzSpan="24">
+                <span nz-typography>
+                    <strong>
+                        {{res.question}}
+                    </strong>
+                </span>
+            </div>
+        </div>
+        <div nz-row>
+            <div class="results-list-answer"  nz-col nzSpan="24">
+                <span nz-typography>{{res?.answer?.response}}</span>
+            </div>
+        </div>
+        <nz-divider></nz-divider>
+    </div>
+</ng-container>
+<ng-template #zeroResults>
+    <div class="results-list">
+        <nz-empty nzNotFoundContent="Please use the below input to search for info on databases"></nz-empty>
+    </div>
+</ng-template>
