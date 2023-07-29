@@ -11,7 +11,7 @@
         </div>
         <div nz-row>
             <div class="results-list-answer"  nz-col nzSpan="24">
-                <span nz-typography>{{res?.answer?.response}}</span>
+                <span appTypingAnimation [text]="res.answer.response"></span>
             </div>
         </div>
         <nz-divider></nz-divider>

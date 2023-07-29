@@ -13,13 +13,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AntdModule } from './antd/antd.module';
 import { AnswersListComponent } from './answers-list/answers-list.component';
+import { TypingAnimationDirective } from './typing-animation.directive';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnswersListComponent
+    AnswersListComponent,
+    TypingAnimationDirective
   ],
   imports: [
     BrowserModule,
