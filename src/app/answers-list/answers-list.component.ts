@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IResults } from '../text-sql-interface';
 import { AiService } from '../ai.service';
 import { tap } from 'rxjs';
