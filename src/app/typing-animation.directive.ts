@@ -16,7 +16,7 @@ export class TypingAnimationDirective implements AfterViewInit {
     const word = this.text.split("");
     const loopTyping = () => {
       if (word.length > 0) {
-        this.eleRef.nativeElement.innerHTML += word.shift();
+        this.eleRef.nativeElement.innerText += word.shift();
       }
       setTimeout(loopTyping, 50);
     };
