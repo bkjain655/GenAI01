@@ -12,7 +12,7 @@ export class AiService {
   constructor() { }
 
   searchQuery(query: string) {
-    const res: IResults = RESULTS.find(v => v.question === query) || {
+    const res: IResults = RESULTS.find(v => v.question.includes(query)) || {
       question: query,
       answer: {
         response: 'Sorry, unable to find an appropriate response for your database query. Please modify and search again.',

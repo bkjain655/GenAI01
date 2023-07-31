@@ -13,7 +13,9 @@ export class AppComponent{
   constructor(private aiService: AiService){ }
   
   generateResponse() {
-    this.aiService.searchQuery(this.searchText);
+    let searchText = this.searchText.trim();
+    searchText = (searchText.endsWith('?') ? searchText.slice(0, -1) : searchText).trim();
+    this.aiService.searchQuery(searchText);
     this.searchText = '';
   }
 }

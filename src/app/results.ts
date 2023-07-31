@@ -22,7 +22,7 @@ const results = [
         }
     },
     {
-        "question": "Can you generate descriptions so I can put these into a business catalog?",
+        "question": "Can you generate descriptions so I can put these into a business catalog",
         "answer": {
             "response": 'Certainly! Here are the descriptions of the `experiments` table columns that you can use in a business catalog:\n\n1. `experiment_id`: A unique identifier for each experiment.\n2. `name`: The name of the experiment.\n3. `artifact_location`: The location where the experiment artifacts are stored.\n4. `lifecycle_stage`: The stage of the experiment\'s lifecycle, which can be either "active" or "deleted".\n5. `creation_time`: The timestamp when the experiment was created.\n6. `last_update_time`: The timestamp of the last update made to the experiment.\n\nPlease note that the `experiments` table is used to store information about experiments conducted in the system. It provides details such as the experiment name, artifact location, lifecycle stage, and timestamps for creation and updates.',
             "sources": {
@@ -44,7 +44,7 @@ const results = [
         }
     },
     {
-        "question": "I have four tables -- business locations, employees working on product lines, products, and revenue tables -- in my database. Because of COVID sanctions, we have employees in China on furlough. Can you write me a query that shows revenue impacted by this China closure?",
+        "question": "I have four tables -- business locations, employees working on product lines, products, and revenue tables -- in my database. Because of COVID sanctions, we have employees in China on furlough. Can you write me a query that shows revenue impacted by this China closure",
         "answer": {
             "response": 'Certainly! Here are the descriptions of the `experiments` table columns that you can use in a business catalog:\n\n1. `experiment_id`: A unique identifier for each experiment.\n2. `name`: The name of the experiment.\n3. `artifact_location`: The location where the experiment artifacts are stored.\n4. `lifecycle_stage`: The stage of the experiment\'s lifecycle, which can be either "active" or "deleted".\n5. `creation_time`: The timestamp when the experiment was created.\n6. `last_update_time`: The timestamp of the last update made to the experiment.\n\nPlease note that the `experiments` table is used to store information about experiments conducted in the system. It provides details such as the experiment name, artifact location, lifecycle stage, and timestamps for creation and updates.',
             "sources": {
@@ -60,7 +60,7 @@ export default results;
 const questions = [
     "What tables does this database contain",
     "Can you describe the experiments table",
-    "Can you generate descriptions so I can put these into a business catalog?",
+    "Can you generate descriptions so I can put these into a business catalog",
     "What is the best way to combine these tables? Please analyze all tables in the database.",
-    "I have four tables -- business locations, employees working on product lines, products, and revenue tables -- in my database. Because of COVID sanctions, we have employees in China on furlough. Can you write me a query that shows revenue impacted by this China closure?"
+    "I have four tables -- business locations, employees working on product lines, products, and revenue tables -- in my database. Because of COVID sanctions, we have employees in China on furlough. Can you write me a query that shows revenue impacted by this China closure"
 ];

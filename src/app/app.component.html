@@ -12,7 +12,7 @@
           <nz-input-group [nzSuffix]="textAreaClearTpl" 
             [nzSize]="'large'"
             class="ant-input-affix-wrapper-textarea-with-clear-btn">
-            <textarea nz-input [(ngModel)]="searchText" placeholder="Search for queries on database"></textarea>
+            <textarea nz-input (keyup.enter)="searchText && generateResponse()" [(ngModel)]="searchText" placeholder="Search for queries on database"></textarea>
           </nz-input-group>
           <ng-template #textAreaClearTpl>
             <span
