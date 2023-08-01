@@ -57,7 +57,7 @@ const results = [
 ]
 export default results;
 
-const questions = [
+export const DEFAULT_QUESTIONS = [
     "What tables does this database contain",
     "Can you describe the experiments table",
     "Can you generate descriptions so I can put these into a business catalog",

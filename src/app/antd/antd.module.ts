@@ -8,6 +8,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzEmptyModule } from 'ng-zorro-antd/empty';
+import { NzAutocompleteModule } from 'ng-zorro-antd/auto-complete';
 
 const modules = [
   NzButtonModule,
@@ -18,6 +19,7 @@ const modules = [
   NzGridModule,
   NzDividerModule,
   NzEmptyModule,
+  NzAutocompleteModule
 ]
 
 @NgModule({

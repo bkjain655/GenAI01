@@ -12,7 +12,16 @@
           <nz-input-group [nzSuffix]="textAreaClearTpl" 
             [nzSize]="'large'"
             class="ant-input-affix-wrapper-textarea-with-clear-btn">
-            <textarea nz-input (keyup.enter)="searchText && generateResponse()" [(ngModel)]="searchText" placeholder="Search for queries on database"></textarea>
+            <textarea nz-input (keyup.enter)="searchText && generateResponse()" 
+              [(ngModel)]="searchText" 
+              (input)="onInput($event)"
+              [nzAutocomplete]="auto"
+              placeholder="Search for queries on database"
+            ></textarea>
+            <nz-autocomplete [nzDataSource]="filtered_questions" 
+              [nzDefaultActiveFirstOption]="false" 
+              [nzOverlayClassName]="'overlay'" #auto>
+            </nz-autocomplete>
           </nz-input-group>
           <ng-template #textAreaClearTpl>
             <span
@@ -21,7 +30,7 @@
               nzTheme="fill"
               nzType="close-circle"
               *ngIf="searchText"
-              (click)="searchText = ''"
+              (click)="resetValues()"
             ></span>
           </ng-template>
         </div>
